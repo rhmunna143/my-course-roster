@@ -1,0 +1,76 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introduction to Programming",
+      "image": "https://i.ibb.co/kHKxYDP/Rectangle-2.png",
+      "credit": 3,
+      "price": 49.99,
+      "description": "Learn the fundamentals of programming and start your journey into the world of coding."
+    },
+    {
+      "id": 2,
+      "title": "Web Development Basics",
+      "image": "https://i.ibb.co/xfjL2jw/Rectangle-2-1.png",
+      "credit": 4,
+      "price": 79.99,
+      "description": "Build a strong foundation in web development, including HTML, CSS, and JavaScript."
+    },
+    {
+      "id": 3,
+      "title": "Data Science Fundamentals",
+      "image": "https://i.ibb.co/mbm2n3W/Rectangle-2-2.png",
+      "credit": 5,
+      "price": 99.99,
+      "description": "Dive into the world of data science and learn how to analyze and visualize data."
+    },
+    {
+      "id": 4,
+      "title": "Machine Learning Mastery",
+      "image": "https://i.ibb.co/DYRgmPR/Rectangle-2-3.png",
+      "credit": 4,
+      "price": 89.99,
+      "description": "Master machine learning algorithms and applications to solve real-world problems."
+    },
+    {
+      "id": 5,
+      "title": "Mobile App Development",
+      "image": "https://i.ibb.co/f9wZS03/Rectangle-2-4.png",
+      "credit": 3,
+      "price": 69.99,
+      "description": "Create mobile apps for iOS and Android platforms with the latest technologies."
+    },
+    {
+      "id": 6,
+      "title": "Cybersecurity Essentials",
+      "image": "https://i.ibb.co/MPWcyPF/Rectangle-2-5.png",
+      "credit": 4,
+      "price": 79.99,
+      "description": "Protect computer systems and networks from cyber threats with essential security practices."
+    },
+    {
+      "id": 7,
+      "title": "Digital Marketing Strategies",
+      "image": "https://i.ibb.co/K5GK3wJ/Rectangle-2-6.png",
+      "credit": 3,
+      "price": 59.99,
+      "description": "Learn effective digital marketing strategies to boost online business presence."
+    },
+    {
+      "id": 8,
+      "title": "Graphic Design Fundamentals",
+      "image": "https://i.ibb.co/tKg3Xxb/Rectangle-3.png",
+      "credit": 3,
+      "price": 59.99,
+      "description": "Master the basics of graphic design and create stunning visuals and graphics."
+    },
+    {
+      "id": 9,
+      "title": "Advanced Data Analysis",
+      "image": "https://i.ibb.co/PwFdkGQ/Rectangle-3-1.png",
+      "credit": 5,
+      "price": 99.99,
+      "description": "Take your data analysis skills to the next level with advanced statistical techniques."
+    }
+  ]
+}
