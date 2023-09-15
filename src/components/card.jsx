@@ -12,14 +12,19 @@ const Card = ({ course, handleSelect }) => {
 
             <dir className="text-left p-0">
                 <h4 className="font-semibold mb-2">{course.title}</h4>
-                <p className="mb-2 text-slate-600">{course.description}</p>
+                <p className="mb-2 text-slate-600 font-normal">{course.description}</p>
             </dir>
 
             <div className='flex justify-between items-center'>
-                <FiDollarSign />
-                <p>Price : {course.price}</p>
-                <TfiBook />
-                <p>Credit : {course.credit}hr</p>
+                <div className='flex items-center gap-1'>
+                    <FiDollarSign />
+                    <p className='text-slate-500 font-medium'>Price : {course.price}</p>
+                </div>
+
+                <div className='flex items-center gap-2'>
+                    <TfiBook />
+                    <p className='text-slate-500 font-medium'>Credit : {course.credit}hr</p>
+                </div>
             </div>
 
             <div>
