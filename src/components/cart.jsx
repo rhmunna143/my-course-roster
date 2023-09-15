@@ -10,7 +10,7 @@ const Cart = ({item,  credit, price, selectedCredit}) => {
                 <div className="mb-2">
                     <h4 className="font-bold my-2">Course Name</h4>
 
-                    <ol className="list-decimal ml-4 text-sm">
+                    <ol className="list-decimal ml-4 text-sm text-slate-600">
                         {item.map((card => (
                             <li key = {card.id}>{card.title}</li>
                         )))}
@@ -26,7 +26,7 @@ const Cart = ({item,  credit, price, selectedCredit}) => {
                 <hr />
 
                 <div>
-                    <h4 className="font-medium my-2">Total Price : {price} USD</h4>
+                    <h4 className="font-medium my-2 text-sm">Total Price : {price} USD</h4>
                 </div>
         </div>
     )

@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Nav from "./components/nav"
 import Home from "./components/home"
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
     <>
       <Nav></Nav>
       <Home></Home>
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+      />
     </>
   )
 }

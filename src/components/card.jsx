@@ -12,7 +12,7 @@ const Card = ({ course, handleSelect }) => {
 
             <dir className="text-left p-0">
                 <h4 className="font-semibold mb-2">{course.title}</h4>
-                <p className="mb-2">{course.description}</p>
+                <p className="mb-2 text-slate-600">{course.description}</p>
             </dir>
 
             <div className='flex justify-between items-center'>

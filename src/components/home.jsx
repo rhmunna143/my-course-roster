@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./card"
 import Cart from "./cart";
+import toast from 'react-hot-toast';
 
 const Home = () => {
     const [cards, setCards] = useState([])
@@ -21,10 +22,18 @@ const Home = () => {
         let totalPrice = course.price;
         let fixedTotalPrice = totalPrice.toFixed(2)
         let totalCredit = course.credit;
-        let totalRemainingCredit = 20;
 
         if (isExist) {
-            return alert('Already selected');
+            toast.error("You are unable to take one course Multiple Time!!!",
+                {
+                    style: {
+                        borderRadius: '10px',
+                        background: '#333',
+                        color: '#fff',
+                    },
+                }
+            )
+            return;
         } else {
 
 
@@ -39,7 +48,16 @@ const Home = () => {
             const remaining = 20 - totalCredit;
 
             if (totalCredit > 20) {
-                return alert("Ato credit nite parba na");
+                toast.error("You are unable to cross the Remaining Credit hr Limit!!!",
+                    {
+                        style: {
+                            borderRadius: '10px',
+                            background: '#333',
+                            color: '#fff',
+                        },
+                    }
+                )
+                return;
             } else {
                 setRemainingCredit(remaining)
                 setCredit(totalCredit)
