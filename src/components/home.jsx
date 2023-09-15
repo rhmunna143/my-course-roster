@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Card from "./card"
-import { data } from "autoprefixer";
 import Cart from "./cart";
 
 const Home = () => {
@@ -11,7 +10,7 @@ const Home = () => {
     const [remainingCredit, setRemainingCredit] = useState(20)
 
     useEffect(() => {
-        fetch("../../public/data.json")
+        fetch("./data.json")
             .then((res) => res.json())
             .then((data) => setCards(data))
             .catch((error) => console.error(error));
