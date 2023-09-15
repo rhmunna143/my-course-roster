@@ -26,7 +26,7 @@ const Cart = ({item,  credit, price, selectedCredit}) => {
                 <hr />
 
                 <div>
-                    <h4 className="font-medium my-2 text-sm">Total Price : {price} USD</h4>
+                    <h4 className="font-medium mt-2 text-sm">Total Price : {price} USD</h4>
                 </div>
         </div>
     )
