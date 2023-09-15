@@ -3,7 +3,7 @@ import { TfiBook } from 'react-icons/tfi';
 
 
 
-const Card = ({ course }) => {
+const Card = ({ course, handleSelect }) => {
     return (
         <div className="p-4 rounded-md bg-white">
             <div>
@@ -23,7 +23,7 @@ const Card = ({ course }) => {
             </div>
 
             <div>
-                <button className='bg-[#2F80ED] text-white w-full p-2 mt-4 rounded-md font-medium'>Select</button>
+                <button onClick={() => handleSelect(course)} className='bg-[#2F80ED] text-white w-full p-2 mt-4 rounded-md font-medium'>Select</button>
             </div>
         </div>
     )
