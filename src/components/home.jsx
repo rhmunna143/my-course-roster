@@ -20,7 +20,6 @@ const Home = () => {
     const handleSelect = (course) => {
         const isExist = item.find((item) => item.id == course.id);
         let totalPrice = course.price;
-        let fixedTotalPrice = totalPrice.toFixed(2)
         let totalCredit = course.credit;
 
         if (isExist) {
@@ -46,6 +45,7 @@ const Home = () => {
             });
 
             const remaining = 20 - totalCredit;
+            const fixedTotalPrice = totalPrice.toFixed(2)
 
             if (totalCredit > 20) {
                 toast.error("You are unable to cross the Remaining Credit hr Limit!!!",
