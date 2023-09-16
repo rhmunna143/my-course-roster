@@ -47,8 +47,8 @@ const Home = () => {
             const remaining = 20 - totalCredit;
             const fixedTotalPrice = totalPrice.toFixed(2)
 
-            if (totalCredit > 20) {
-                toast.error("You are unable to cross the Remaining Credit hr Limit!!!",
+            if (totalCredit > 20 || remaining < 0) {
+                toast.error("You are unable to cross the Remaining Credit hr Limit and have to Remain available credit!!!",
                     {
                         style: {
                             borderRadius: '10px',
@@ -71,7 +71,7 @@ const Home = () => {
     }
 
     return (
-        <div className="container mx-auto flex gap-4 p-4 lg:p-0 mb-[80px]">
+        <div className="container mx-auto flex flex-col lg:flex-row gap-4 p-4 lg:p-0 mb-[80px]">
             <div className="cards grid-cols-1 grid lg:grid-cols-3 md:grid-cols-2 gap-4">
                 {cards.map((course) => (
                     <Card key={course.id} handleSelect={handleSelect} course={course}></Card>
